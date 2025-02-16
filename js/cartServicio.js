@@ -63,12 +63,16 @@ function actualizarNumeroCarrito(){
     cuenta = memoria.reduce((acum, current)=>acum+current.cantidad,0)
     return cuentaCarritoElement.innerText = cuenta;
   }
-  cuentaCarritoElement.innerText = 0;
+  else{
+    cuentaCarritoElement.innerText = 0;
+  }
+
 }
 
 /** Reinicia el carrito */
 function reiniciarCarrito(){
   localStorage.removeItem("comida");
+  actualizarTotales();
   actualizarNumeroCarrito();
 }
 

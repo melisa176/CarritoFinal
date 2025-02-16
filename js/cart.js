@@ -3,16 +3,16 @@ const cantidadElement = document.getElementById("cantidad");
 const precioElement = document.getElementById("precio");
 const carritoVacioElement = document.getElementById("carrito-vacio");
 const totalesContainer = document.getElementById("totales");
-
+const reiniciarCarritoElement=document.getElementById("reiniciar");
 /** Crea las tarjetas de productos teniendo en cuenta lo guardado en localstorage */
 function crearTarjetasProductosCarrito() {
   contenedorTarjetas.innerHTML = "";
   const productos = JSON.parse(localStorage.getItem("comida"));
   if (productos && productos.length > 0) {
     productos.forEach((producto) => {
-      const nuevaComida = document.createElement("div");
-      nuevaComida.classList = "tarjeta-producto";
-      nuevaComida.innerHTML = `
+      const nuevaBicicleta = document.createElement("div");
+      nuevaBicicleta.classList = "tarjeta-producto";
+      nuevaBicicleta.innerHTML = `
     <img src="./img/${producto.id}.png">
     <h3>${producto.nombre}</h3>
     <span>$${producto.precio}</span>
@@ -22,8 +22,8 @@ function crearTarjetasProductosCarrito() {
     <button>+</button>
     </div>
     `;
-      contenedorTarjetas.appendChild(nuevaComida);
-      nuevaComida
+      contenedorTarjetas.appendChild(nuevaBicicleta);
+      nuevaBicicleta
         .getElementsByTagName("button")[0]
         .addEventListener("click", (e) => {
           const cantidadElement = e.target.parentElement.getElementsByClassName("cantidad")[0];
@@ -31,7 +31,7 @@ function crearTarjetasProductosCarrito() {
           crearTarjetasProductosCarrito();
           actualizarTotales();
         });
-      nuevaComida
+      nuevaBicicleta
         .getElementsByTagName("button")[1]
         .addEventListener("click", (e) => {
           const cantidadElement = e.target.parentElement.getElementsByClassName("cantidad")[0];
