@@ -2,73 +2,63 @@
 const comida = [
     {
       id:1,
-      nombre: "Pan",
+      nombre: "Hamburguesa parrilera",
       precio: 12,
     },
     {
       id:2,
-      nombre: "Carne",
+      nombre: "Hamburguesa extrema",
       precio: 14,
     },
     {
       id:3,
-      nombre: "Chocolate",
+      nombre: "Hamburguesa hawaiana",
       precio: 13,
     },
     {
       id:4,
-      nombre: "Pan",
+      nombre: "Hamburguesa Clásica",
       precio: 12,
     },
  
     {
       id:6,
-      nombre: "Chocolate",
+      nombre: "Hamburguesa a la carretilla",
       precio: 13,
     },
     {
       id:7,
-      nombre: "Pan",
+      nombre: "Hamburguesa a lo pobre",
       precio: 12,
     },
     {
       id:8,
-      nombre: "Carne",
+      nombre: "Hamburguesa Royal",
       precio: 14,
     },
     {
       id:9,
-      nombre: "Chocolate",
+      nombre: "Haburguesa La Tumbay",
       precio: 13,
     },
     {
       id:10,
-      nombre: "Pan",
+      nombre: "Hamburguesa Extrema",
       precio: 12,
     },
     {
       id:11,
-      nombre: "Carne",
+      nombre: "Hamburguesa La churrita",
       precio: 14,
     },
     {
       id:12,
-      nombre: "Chocolate",
+      nombre: "Hamburguesa Cheese",
       precio: 13,
     },
     {
       id:13,
-      nombre: "Pan",
+      nombre: "Haburguesa con tocino",
       precio: 12,
-    },
-    {
-      id:14,
-      nombre: "Carne",
-      precio: 14,
-    },
-    {
-      id:15,
-      nombre: "Chocolate",
-      precio: 13,
-    },
+    }
   ]

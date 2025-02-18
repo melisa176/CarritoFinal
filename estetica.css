@@ -18,7 +18,10 @@ body {
 header nav{
     display: flex;
     justify-content: space-between;
-    margin: 0 60px;
+    margin: 0 15px;
+    background-color:blue; 
+    color: white;
+  
   }
 
 header nav div{
@@ -28,15 +31,22 @@ header nav div{
   }
   header{
     box-shadow: 4px 4px 8px 4px rgba(206, 19, 19, 0.2) inset;
+    background-color:blue;
+    color: white;
     
   }
 
 a{
     text-decoration: none;
     font-weight: bold;  /* Hace el texto negrita */
-    font-size: 18px;    /* Hace el texto más grande */
+    font-size: 18px; 
+    color: white;
+}
+.nav-brand {
+  flex-grow: 1;
 }
   
+
   a:hover:not(#cart){
     color: red;
   }
