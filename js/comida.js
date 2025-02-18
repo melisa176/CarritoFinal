@@ -12,7 +12,7 @@ const comida = [
     },
     {
       id:3,
-      nombre: "Hamburguesa hawaiana",
+      nombre: "Hamburguesa  hawaiana",
       precio: 13,
     },
     {
